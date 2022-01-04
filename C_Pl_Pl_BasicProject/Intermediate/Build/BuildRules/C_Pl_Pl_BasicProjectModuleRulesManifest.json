@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"F:\\Documents\\LinkedIn C++ Beginners Class Work\\C++ Repo\\UE_C-Pl-Pl_BasicProj\\C_Pl_Pl_BasicProject\\Source\\C_Pl_Pl_BasicProject\\C_Pl_Pl_BasicProject.Build.cs",
+		"F:\\Documents\\LinkedIn C++ Beginners Class Work\\C++ Repo\\UE_C-Pl-Pl_BasicProj\\C_Pl_Pl_BasicProject\\Source\\C_Pl_Pl_BasicProject.Target.cs",
+		"F:\\Documents\\LinkedIn C++ Beginners Class Work\\C++ Repo\\UE_C-Pl-Pl_BasicProj\\C_Pl_Pl_BasicProject\\Source\\C_Pl_Pl_BasicProjectEditor.Target.cs"
+	],
+	"EngineVersion": "4.27.2"
+}

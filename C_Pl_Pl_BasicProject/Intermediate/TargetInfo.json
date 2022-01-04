@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "C_Pl_Pl_BasicProject",
+			"Path": "F:\\Documents\\LinkedIn C++ Beginners Class Work\\C++ Repo\\UE_C-Pl-Pl_BasicProj\\C_Pl_Pl_BasicProject\\Source\\C_Pl_Pl_BasicProject.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "C_Pl_Pl_BasicProjectEditor",
+			"Path": "F:\\Documents\\LinkedIn C++ Beginners Class Work\\C++ Repo\\UE_C-Pl-Pl_BasicProj\\C_Pl_Pl_BasicProject\\Source\\C_Pl_Pl_BasicProjectEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

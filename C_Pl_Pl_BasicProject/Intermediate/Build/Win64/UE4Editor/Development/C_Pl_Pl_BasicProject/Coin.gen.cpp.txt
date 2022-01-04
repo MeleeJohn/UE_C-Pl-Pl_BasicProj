@@ -1,0 +1,5 @@
+F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\Definitions.C_Pl_Pl_BasicProject.h
+D:\Unreal Engine Versions\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+D:\Unreal Engine Versions\UE_4.27\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Source\C_Pl_Pl_BasicProject/Private/Coin.h
+F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Inc\C_Pl_Pl_BasicProject\Coin.generated.h

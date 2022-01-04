@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\C_Pl_Pl_BasicProject.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{0B8671D2-2234-4434-B713-925FADD30512}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\C_Pl_Pl_BasicProject.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\C_Pl_Pl_BasicProjectEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{3DF61383-E56E-4735-9FD2-54A23AE469F2}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\C_Pl_Pl_BasicProject">
+      <UniqueIdentifier>{AA60D5E2-6E0D-499C-90B1-5B82138F17D6}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProject.Build.cs">
+      <Filter>Source\C_Pl_Pl_BasicProject</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProject.cpp">
+      <Filter>Source\C_Pl_Pl_BasicProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProject.h">
+      <Filter>Source\C_Pl_Pl_BasicProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectCharacter.cpp">
+      <Filter>Source\C_Pl_Pl_BasicProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectCharacter.h">
+      <Filter>Source\C_Pl_Pl_BasicProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectGameMode.cpp">
+      <Filter>Source\C_Pl_Pl_BasicProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectGameMode.h">
+      <Filter>Source\C_Pl_Pl_BasicProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectHUD.cpp">
+      <Filter>Source\C_Pl_Pl_BasicProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectHUD.h">
+      <Filter>Source\C_Pl_Pl_BasicProject</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectProjectile.cpp">
+      <Filter>Source\C_Pl_Pl_BasicProject</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectProjectile.h">
+      <Filter>Source\C_Pl_Pl_BasicProject</Filter>
+    </ClInclude>
+    <Filter Include="Source\C_Pl_Pl_BasicProject\Private">
+      <UniqueIdentifier>{A01EC261-7604-4E30-A4E1-64AA8A69D973}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\C_Pl_Pl_BasicProject\Private\Coin.cpp">
+      <Filter>Source\C_Pl_Pl_BasicProject\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C_Pl_Pl_BasicProject\Private\Coin.h">
+      <Filter>Source\C_Pl_Pl_BasicProject\Private</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

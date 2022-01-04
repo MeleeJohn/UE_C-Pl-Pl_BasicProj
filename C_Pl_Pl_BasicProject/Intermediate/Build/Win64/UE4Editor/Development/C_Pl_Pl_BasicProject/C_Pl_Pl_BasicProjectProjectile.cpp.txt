@@ -1,0 +1,11 @@
+F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\Definitions.C_Pl_Pl_BasicProject.h
+F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectProjectile.h
+F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Inc\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectProjectile.generated.h
+D:\Unreal Engine Versions\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/ProjectileMovementComponent.h
+D:\Unreal Engine Versions\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/MovementComponent.h
+D:\Unreal Engine Versions\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\MovementComponent.generated.h
+D:\Unreal Engine Versions\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ProjectileMovementComponent.generated.h
+D:\Unreal Engine Versions\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/SphereComponent.h
+D:\Unreal Engine Versions\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/ShapeComponent.h
+D:\Unreal Engine Versions\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ShapeComponent.generated.h
+D:\Unreal Engine Versions\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\SphereComponent.generated.h
