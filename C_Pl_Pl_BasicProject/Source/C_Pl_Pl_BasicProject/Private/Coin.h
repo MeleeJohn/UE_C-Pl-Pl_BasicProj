@@ -14,6 +14,7 @@ class ACoin : public AActor
 public:	
 	// Sets default values for this actor's properties
 	ACoin();
+	
 
 protected:
 	// Called when the game starts or when spawned
@@ -23,4 +24,16 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 
+	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
+		class UBoxComponent* CollisionBox;
+
+
+	UFUNCTION()
+		void pickedUp();
+
+	UFUNCTION()
+		void onOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);
+
+	UFUNCTION()
+		void onOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex);
 };

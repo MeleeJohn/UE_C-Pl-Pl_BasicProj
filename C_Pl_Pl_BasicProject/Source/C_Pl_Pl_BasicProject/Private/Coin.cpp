@@ -7,6 +7,9 @@
 // Lastly, limit the amount of coins on screen to an X value that is randomly set within the level blueprint.
 //-----------------------
 #include "Coin.h"
+#include "Components/BoxComponent.h"
+#include "Engine/Engine.h"
+
 
 // Sets default values
 ACoin::ACoin()
@@ -14,7 +17,15 @@ ACoin::ACoin()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
+	CollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
+	CollisionBox->SetBoxExtent(FVector(32.f, 32.f, 32.f));
+	CollisionBox->SetCollisionProfileName("Trigger");
+	RootComponent = CollisionBox;
+
+	CollisionBox->OnComponentBeginOverlap.AddDynamic(this, &ACoin::onOverlapBegin);
+
 }
+
 
 // Called when the game starts or when spawned
 void ACoin::BeginPlay()
@@ -27,6 +38,25 @@ void ACoin::BeginPlay()
 void ACoin::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
+	//UE_LOG(LogTemp, Warning, TEXT("I'm a coin"));
+}
 
+
+
+
+void ACoin::onOverlapBegin(UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+{
+	pickedUp();
+}
+
+void ACoin::onOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+{
+
+}
+
+
+void ACoin::pickedUp()
+{
+	UE_LOG(LogTemp, Warning, TEXT("Woah did something just go over me?"));
 }
 

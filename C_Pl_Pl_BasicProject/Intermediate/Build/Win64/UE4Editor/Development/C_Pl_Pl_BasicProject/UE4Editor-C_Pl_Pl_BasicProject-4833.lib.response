@@ -1,0 +1,23 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UE4Editor-C_Pl_Pl_BasicProject-4833.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\C_Pl_Pl_BasicProjectEditor\Development\Engine\SharedPCH.Engine.ShadowErrors.h.obj"
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\Coin.cpp.obj"
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProject.cpp.obj"
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectCharacter.cpp.obj"
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectGameMode.cpp.obj"
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectHUD.cpp.obj"
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectProjectile.cpp.obj"
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\Coin.gen.cpp.obj"
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProject.init.gen.cpp.obj"
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectCharacter.gen.cpp.obj"
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectGameMode.gen.cpp.obj"
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectHUD.gen.cpp.obj"
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProjectProjectile.gen.cpp.obj"
+"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\Default.rc2.res"
+/OUT:"F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Development\C_Pl_Pl_BasicProject\UE4Editor-C_Pl_Pl_BasicProject-4833.lib"

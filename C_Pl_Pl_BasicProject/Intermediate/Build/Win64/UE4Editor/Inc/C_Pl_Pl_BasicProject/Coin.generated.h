@@ -8,14 +8,29 @@
 #include "UObject/ScriptMacros.h"
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
+class UPrimitiveComponent;
+class AActor;
+struct FHitResult;
 #ifdef C_PL_PL_BASICPROJECT_Coin_generated_h
 #error "Coin.generated.h already included, missing '#pragma once' in Coin.h"
 #endif
 #define C_PL_PL_BASICPROJECT_Coin_generated_h
 
 #define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_SPARSE_DATA
-#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_RPC_WRAPPERS
-#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_RPC_WRAPPERS_NO_PURE_DECLS
+#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_RPC_WRAPPERS \
+ \
+	DECLARE_FUNCTION(execonOverlapEnd); \
+	DECLARE_FUNCTION(execonOverlapBegin); \
+	DECLARE_FUNCTION(execpickedUp);
+
+
+#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+ \
+	DECLARE_FUNCTION(execonOverlapEnd); \
+	DECLARE_FUNCTION(execonOverlapBegin); \
+	DECLARE_FUNCTION(execpickedUp);
+
+
 #define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACoin(); \
