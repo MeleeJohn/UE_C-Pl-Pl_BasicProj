@@ -35,7 +35,7 @@ void EmptyLinkFunctionForGeneratedCodeCoin() {}
 	}
 	DEFINE_FUNCTION(ACoin::execonOverlapBegin)
 	{
-		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComponent);
+		P_GET_OBJECT(UPrimitiveComponent,Z_Param_HitComp);
 		P_GET_OBJECT(AActor,Z_Param_OtherActor);
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OtherComp);
 		P_GET_PROPERTY(FIntProperty,Z_Param_OtherBodyIndex);
@@ -43,7 +43,7 @@ void EmptyLinkFunctionForGeneratedCodeCoin() {}
 		P_GET_STRUCT_REF(FHitResult,Z_Param_Out_SweepResult);
 		P_FINISH;
 		P_NATIVE_BEGIN;
-		P_THIS->onOverlapBegin(Z_Param_OverlappedComponent,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
+		P_THIS->onOverlapBegin(Z_Param_HitComp,Z_Param_OtherActor,Z_Param_OtherComp,Z_Param_OtherBodyIndex,Z_Param_bFromSweep,Z_Param_Out_SweepResult);
 		P_NATIVE_END;
 	}
 	DEFINE_FUNCTION(ACoin::execpickedUp)
@@ -67,7 +67,7 @@ void EmptyLinkFunctionForGeneratedCodeCoin() {}
 	{
 		struct Coin_eventonOverlapBegin_Parms
 		{
-			UPrimitiveComponent* OverlappedComponent;
+			UPrimitiveComponent* HitComp;
 			AActor* OtherActor;
 			UPrimitiveComponent* OtherComp;
 			int32 OtherBodyIndex;
@@ -75,9 +75,9 @@ void EmptyLinkFunctionForGeneratedCodeCoin() {}
 			FHitResult SweepResult;
 		};
 #if WITH_METADATA
-		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OverlappedComponent_MetaData[];
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_HitComp_MetaData[];
 #endif
-		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OverlappedComponent;
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_HitComp;
 		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_OtherActor;
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_OtherComp_MetaData[];
@@ -97,11 +97,11 @@ void EmptyLinkFunctionForGeneratedCodeCoin() {}
 		static const UE4CodeGen_Private::FFunctionParams FuncParams;
 	};
 #if WITH_METADATA
-	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_OverlappedComponent_MetaData[] = {
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_HitComp_MetaData[] = {
 		{ "EditInline", "true" },
 	};
 #endif
-	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_OverlappedComponent = { "OverlappedComponent", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Coin_eventonOverlapBegin_Parms, OverlappedComponent), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_OverlappedComponent_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_OverlappedComponent_MetaData)) };
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_HitComp = { "HitComp", nullptr, (EPropertyFlags)0x0010000000080080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Coin_eventonOverlapBegin_Parms, HitComp), Z_Construct_UClass_UPrimitiveComponent_NoRegister, METADATA_PARAMS(Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_HitComp_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_HitComp_MetaData)) };
 	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_OtherActor = { "OtherActor", nullptr, (EPropertyFlags)0x0010000000000080, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Coin_eventonOverlapBegin_Parms, OtherActor), Z_Construct_UClass_AActor_NoRegister, METADATA_PARAMS(nullptr, 0) };
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_OtherComp_MetaData[] = {
@@ -122,7 +122,7 @@ void EmptyLinkFunctionForGeneratedCodeCoin() {}
 #endif
 	const UE4CodeGen_Private::FStructPropertyParams Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_SweepResult = { "SweepResult", nullptr, (EPropertyFlags)0x0010008008000182, UE4CodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(Coin_eventonOverlapBegin_Parms, SweepResult), Z_Construct_UScriptStruct_FHitResult, METADATA_PARAMS(Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_SweepResult_MetaData, UE_ARRAY_COUNT(Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_SweepResult_MetaData)) };
 	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::PropPointers[] = {
-		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_OverlappedComponent,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_HitComp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_OtherActor,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_OtherComp,
 		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_ACoin_onOverlapBegin_Statics::NewProp_OtherBodyIndex,
@@ -250,7 +250,7 @@ void EmptyLinkFunctionForGeneratedCodeCoin() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_C_Pl_Pl_BasicProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACoin_Statics::FuncInfo[] = {
-		{ &Z_Construct_UFunction_ACoin_onOverlapBegin, "onOverlapBegin" }, // 1906352775
+		{ &Z_Construct_UFunction_ACoin_onOverlapBegin, "onOverlapBegin" }, // 1812145323
 		{ &Z_Construct_UFunction_ACoin_onOverlapEnd, "onOverlapEnd" }, // 2595341486
 		{ &Z_Construct_UFunction_ACoin_pickedUp, "pickedUp" }, // 2728352946
 	};
@@ -298,7 +298,7 @@ void EmptyLinkFunctionForGeneratedCodeCoin() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACoin, 2723064067);
+	IMPLEMENT_CLASS(ACoin, 311931870);
 	template<> C_PL_PL_BASICPROJECT_API UClass* StaticClass<ACoin>()
 	{
 		return ACoin::StaticClass();

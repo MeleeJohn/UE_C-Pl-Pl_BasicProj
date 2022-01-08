@@ -234,6 +234,7 @@
 /I Runtime\ClothingSystemRuntimeInterface\Public
 /I "F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Inc\C_Pl_Pl_BasicProject"
 /I "F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Source"
+/I "F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Source\C_Pl_Pl_BasicProject\Public"
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\AugmentedReality
 /I Runtime\AugmentedReality\Public
 /I ..\Intermediate\Build\Win64\UE4Editor\Inc\MRMesh

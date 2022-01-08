@@ -17,11 +17,9 @@ ACoin::ACoin()
  	// Set this actor to call Tick() every frame.  You can turn this off to improve performance if you don't need it.
 	PrimaryActorTick.bCanEverTick = true;
 
-	CollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("BoxComponent"));
+	CollisionBox = CreateDefaultSubobject<UBoxComponent>(TEXT("WoahABox"));
 	CollisionBox->SetBoxExtent(FVector(32.f, 32.f, 32.f));
-	CollisionBox->SetCollisionProfileName("Trigger");
 	RootComponent = CollisionBox;
-
 	CollisionBox->OnComponentBeginOverlap.AddDynamic(this, &ACoin::onOverlapBegin);
 
 }
@@ -31,25 +29,24 @@ ACoin::ACoin()
 void ACoin::BeginPlay()
 {
 	Super::BeginPlay();
-	
+
 }
 
 // Called every frame
 void ACoin::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	//UE_LOG(LogTemp, Warning, TEXT("I'm a coin"));
+
 }
 
 
-
-
-void ACoin::onOverlapBegin(UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
+void ACoin::onOverlapBegin(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
+	//UE_LOG(LogTemp, Warning, TEXT("Woah did something just go over me?"));
 	pickedUp();
 }
 
-void ACoin::onOverlapEnd(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
+void ACoin::onOverlapEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
 {
 
 }

@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\C_Pl_Pl_BasicProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{0B8671D2-2234-4434-B713-925FADD30512}</UniqueIdentifier>
+      <UniqueIdentifier>{3347AD11-239B-49A7-8568-E1989C5FDB0D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\C_Pl_Pl_BasicProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{3DF61383-E56E-4735-9FD2-54A23AE469F2}</UniqueIdentifier>
+      <UniqueIdentifier>{D6F1B3D3-0833-41C2-9AA3-61ED2B9B2E87}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\C_Pl_Pl_BasicProject">
-      <UniqueIdentifier>{AA60D5E2-6E0D-499C-90B1-5B82138F17D6}</UniqueIdentifier>
+      <UniqueIdentifier>{8EC17141-6A85-451E-A56A-825D31C98BD1}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProject.Build.cs">
       <Filter>Source\C_Pl_Pl_BasicProject</Filter>
@@ -66,13 +66,28 @@
       <Filter>Source\C_Pl_Pl_BasicProject</Filter>
     </ClInclude>
     <Filter Include="Source\C_Pl_Pl_BasicProject\Private">
-      <UniqueIdentifier>{A01EC261-7604-4E30-A4E1-64AA8A69D973}</UniqueIdentifier>
+      <UniqueIdentifier>{C9EAEAD2-16CA-46E1-8FB7-A7CD44C2794F}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\C_Pl_Pl_BasicProject\Private\AmmoCrate.cpp">
+      <Filter>Source\C_Pl_Pl_BasicProject\Private</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\C_Pl_Pl_BasicProject\Private\Coin.cpp">
       <Filter>Source\C_Pl_Pl_BasicProject\Private</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\C_Pl_Pl_BasicProject\Private\Coin.h">
       <Filter>Source\C_Pl_Pl_BasicProject\Private</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\C_Pl_Pl_BasicProject\Private\CustomFirstPersonnCharacter.cpp">
+      <Filter>Source\C_Pl_Pl_BasicProject\Private</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\C_Pl_Pl_BasicProject\Private\CustomFirstPersonnCharacter.h">
+      <Filter>Source\C_Pl_Pl_BasicProject\Private</Filter>
+    </ClInclude>
+    <Filter Include="Source\C_Pl_Pl_BasicProject\Public">
+      <UniqueIdentifier>{891E5F0F-A6F4-4C35-A383-E8FCD4757AE4}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\C_Pl_Pl_BasicProject\Public\AmmoCrate.h">
+      <Filter>Source\C_Pl_Pl_BasicProject\Public</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
