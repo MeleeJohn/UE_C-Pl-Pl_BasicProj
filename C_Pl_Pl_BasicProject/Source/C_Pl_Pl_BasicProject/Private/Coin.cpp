@@ -9,6 +9,8 @@
 #include "Coin.h"
 #include "Components/BoxComponent.h"
 #include "Engine/Engine.h"
+#include "Runtime/Engine/Classes/Kismet/GameplayStatics.h"
+#include "CustomFirstPersonnCharacter.h"
 
 
 // Sets default values
@@ -30,6 +32,7 @@ void ACoin::BeginPlay()
 {
 	Super::BeginPlay();
 
+
 }
 
 // Called every frame
@@ -43,7 +46,13 @@ void ACoin::Tick(float DeltaTime)
 void ACoin::onOverlapBegin(class UPrimitiveComponent* HitComp, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult)
 {
 	//UE_LOG(LogTemp, Warning, TEXT("Woah did something just go over me?"));
-	pickedUp();
+	//pickedUp();
+	if (OtherActor->ActorHasTag(TEXT("Player"))) {
+		UE_LOG(LogTemp, Warning, TEXT("Coin Grabbed by Player"));
+		PlayerCharacter = Cast<ACustomFirstPersonnCharacter>(OtherActor);
+		PlayerCharacter->addCoinScore();
+		pickedUp();
+	}
 }
 
 void ACoin::onOverlapEnd(class UPrimitiveComponent* OverlappedComponent, class AActor* OtherActor, class UPrimitiveComponent* OtherComp, int32 OtherBodyIndex)
@@ -54,6 +63,7 @@ void ACoin::onOverlapEnd(class UPrimitiveComponent* OverlappedComponent, class A
 
 void ACoin::pickedUp()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Woah did something just go over me?"));
+	UE_LOG(LogTemp, Warning, TEXT("Nice i was picked up, gonna go kms, see ya!"));
+	Destroy();
 }
 

@@ -69,3 +69,10 @@ void ACustomFirstPersonnCharacter::stopJump()
 	bPressedJump = false;
 }
 
+void ACustomFirstPersonnCharacter::addCoinScore()
+{
+	coinScore++;
+	UE_LOG(LogTemp, Warning, TEXT("Added Score to player"));
+
+}
+

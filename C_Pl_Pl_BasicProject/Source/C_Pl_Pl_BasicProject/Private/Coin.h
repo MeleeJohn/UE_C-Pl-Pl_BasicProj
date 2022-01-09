@@ -4,7 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
+#include "CustomFirstPersonnCharacter.h"
 #include "Coin.generated.h"
+
 
 UCLASS()
 class ACoin : public AActor
@@ -23,6 +25,8 @@ protected:
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
+
+	ACustomFirstPersonnCharacter* PlayerCharacter;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadWrite)
 		class UBoxComponent* CollisionBox;

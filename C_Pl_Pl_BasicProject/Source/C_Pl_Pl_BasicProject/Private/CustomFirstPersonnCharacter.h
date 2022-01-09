@@ -35,4 +35,9 @@ public:
 
 	UFUNCTION()
 		void stopJump();
+
+	void addCoinScore();
+
+private:
+	int coinScore = 0;
 };

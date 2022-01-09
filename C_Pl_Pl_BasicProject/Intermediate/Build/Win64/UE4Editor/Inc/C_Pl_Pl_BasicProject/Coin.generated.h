@@ -16,22 +16,22 @@ struct FHitResult;
 #endif
 #define C_PL_PL_BASICPROJECT_Coin_generated_h
 
-#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_SPARSE_DATA
-#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_RPC_WRAPPERS \
+#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_SPARSE_DATA
+#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_RPC_WRAPPERS \
  \
 	DECLARE_FUNCTION(execonOverlapEnd); \
 	DECLARE_FUNCTION(execonOverlapBegin); \
 	DECLARE_FUNCTION(execpickedUp);
 
 
-#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
+#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
  \
 	DECLARE_FUNCTION(execonOverlapEnd); \
 	DECLARE_FUNCTION(execonOverlapBegin); \
 	DECLARE_FUNCTION(execpickedUp);
 
 
-#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_INCLASS_NO_PURE_DECLS \
+#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesACoin(); \
 	friend struct Z_Construct_UClass_ACoin_Statics; \
@@ -40,7 +40,7 @@ public: \
 	DECLARE_SERIALIZER(ACoin)
 
 
-#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_INCLASS \
+#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_INCLASS \
 private: \
 	static void StaticRegisterNativesACoin(); \
 	friend struct Z_Construct_UClass_ACoin_Statics; \
@@ -49,7 +49,7 @@ public: \
 	DECLARE_SERIALIZER(ACoin)
 
 
-#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_STANDARD_CONSTRUCTORS \
+#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ACoin(const FObjectInitializer& ObjectInitializer); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ACoin) \
@@ -62,7 +62,7 @@ private: \
 public:
 
 
-#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_ENHANCED_CONSTRUCTORS \
+#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 	/** Private move- and copy-constructors, should never be used */ \
 	NO_API ACoin(ACoin&&); \
@@ -73,28 +73,28 @@ public: \
 	DEFINE_DEFAULT_CONSTRUCTOR_CALL(ACoin)
 
 
-#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_PRIVATE_PROPERTY_OFFSET
-#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_9_PROLOG
-#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_GENERATED_BODY_LEGACY \
+#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_PRIVATE_PROPERTY_OFFSET
+#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_11_PROLOG
+#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_PRIVATE_PROPERTY_OFFSET \
-	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_SPARSE_DATA \
-	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_RPC_WRAPPERS \
-	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_INCLASS \
-	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_STANDARD_CONSTRUCTORS \
+	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_PRIVATE_PROPERTY_OFFSET \
+	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_SPARSE_DATA \
+	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_RPC_WRAPPERS \
+	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_INCLASS \
+	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_GENERATED_BODY \
+#define C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_PRIVATE_PROPERTY_OFFSET \
-	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_SPARSE_DATA \
-	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_RPC_WRAPPERS_NO_PURE_DECLS \
-	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_INCLASS_NO_PURE_DECLS \
-	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_12_ENHANCED_CONSTRUCTORS \
+	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_PRIVATE_PROPERTY_OFFSET \
+	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_SPARSE_DATA \
+	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_RPC_WRAPPERS_NO_PURE_DECLS \
+	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_INCLASS_NO_PURE_DECLS \
+	C_Pl_Pl_BasicProject_Source_C_Pl_Pl_BasicProject_Private_Coin_h_14_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
