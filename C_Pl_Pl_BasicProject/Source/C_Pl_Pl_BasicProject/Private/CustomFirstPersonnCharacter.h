@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Blueprint/UserWidget.h"
 #include "GameFramework/Character.h"
 #include "CustomFirstPersonnCharacter.generated.h"
 
@@ -18,6 +19,13 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	/*UPROPERTY(EditAnywhere, Category = "Class Types")
+		TSubclassOf<UUserWidget> WidgetClass;
+
+	//UPROPERTY(VisibleInstanceOnly, Category="Runtime")
+		//class UTextWidget* TextWidget;
+	UPROPERTY(VisibleInstanceOnly, Category = "Runtime")
+		class UTextWidget* TextWidget;*/
 
 public:	
 	// Called every frame
@@ -37,6 +45,7 @@ public:
 		void stopJump();
 
 	void addCoinScore();
+	int getCoinScore();
 
 private:
 	int coinScore = 0;

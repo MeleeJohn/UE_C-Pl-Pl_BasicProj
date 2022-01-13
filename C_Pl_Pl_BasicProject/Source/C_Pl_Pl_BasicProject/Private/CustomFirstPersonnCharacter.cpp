@@ -3,6 +3,9 @@
 
 #include "CustomFirstPersonnCharacter.h"
 
+#include "Blueprint/UserWidget.h"
+
+
 // Sets default values
 ACustomFirstPersonnCharacter::ACustomFirstPersonnCharacter()
 {
@@ -18,6 +21,13 @@ void ACustomFirstPersonnCharacter::BeginPlay()
 	check(GEngine != nullptr);
 
 	GEngine->AddOnScreenDebugMessage(-1, 5.0f, FColor::Red, TEXT("We are using CustomFPSCharacter"));
+	/*if (IsValid(WidgetClass)) {
+		TextWidget = Cast<UTextWidget>(CreateWidget(GetWorld(), WidgetClass));
+
+		if (TextWidget != nullptr) {
+			UE_LOG(LogTemp, Warning, TEXT("Woah is tthat a use widget I see"));
+		}
+	}*/
 }
 
 // Called every frame
@@ -72,7 +82,13 @@ void ACustomFirstPersonnCharacter::stopJump()
 void ACustomFirstPersonnCharacter::addCoinScore()
 {
 	coinScore++;
+	
 	UE_LOG(LogTemp, Warning, TEXT("Added Score to player"));
 
+}
+
+int ACustomFirstPersonnCharacter::getCoinScore()
+{
+	return coinScore;
 }
 
