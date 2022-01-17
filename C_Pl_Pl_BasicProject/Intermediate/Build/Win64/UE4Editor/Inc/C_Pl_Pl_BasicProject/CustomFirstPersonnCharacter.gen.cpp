@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeCustomFirstPersonnCharacter() {}
 	C_PL_PL_BASICPROJECT_API UClass* Z_Construct_UClass_ACustomFirstPersonnCharacter();
 	ENGINE_API UClass* Z_Construct_UClass_ACharacter();
 	UPackage* Z_Construct_UPackage__Script_C_Pl_Pl_BasicProject();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
+	C_PL_PL_BASICPROJECT_API UClass* Z_Construct_UClass_APistol_NoRegister();
 // End Cross Module References
 	DEFINE_FUNCTION(ACustomFirstPersonnCharacter::execstopJump)
 	{
@@ -32,14 +34,44 @@ void EmptyLinkFunctionForGeneratedCodeCustomFirstPersonnCharacter() {}
 		P_THIS->startJump();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(ACustomFirstPersonnCharacter::execspawnWeapon)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->spawnWeapon();
+		P_NATIVE_END;
+	}
 	void ACustomFirstPersonnCharacter::StaticRegisterNativesACustomFirstPersonnCharacter()
 	{
 		UClass* Class = ACustomFirstPersonnCharacter::StaticClass();
 		static const FNameNativePtrPair Funcs[] = {
+			{ "spawnWeapon", &ACustomFirstPersonnCharacter::execspawnWeapon },
 			{ "startJump", &ACustomFirstPersonnCharacter::execstartJump },
 			{ "stopJump", &ACustomFirstPersonnCharacter::execstopJump },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
+	}
+	struct Z_Construct_UFunction_ACustomFirstPersonnCharacter_spawnWeapon_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACustomFirstPersonnCharacter_spawnWeapon_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Private/CustomFirstPersonnCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACustomFirstPersonnCharacter_spawnWeapon_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACustomFirstPersonnCharacter, nullptr, "spawnWeapon", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACustomFirstPersonnCharacter_spawnWeapon_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACustomFirstPersonnCharacter_spawnWeapon_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACustomFirstPersonnCharacter_spawnWeapon()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACustomFirstPersonnCharacter_spawnWeapon_Statics::FuncParams);
+		}
+		return ReturnFunction;
 	}
 	struct Z_Construct_UFunction_ACustomFirstPersonnCharacter_startJump_Statics
 	{
@@ -96,6 +128,11 @@ void EmptyLinkFunctionForGeneratedCodeCustomFirstPersonnCharacter() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_Pistol_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_Pistol;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -104,6 +141,7 @@ void EmptyLinkFunctionForGeneratedCodeCustomFirstPersonnCharacter() {}
 		(UObject* (*)())Z_Construct_UPackage__Script_C_Pl_Pl_BasicProject,
 	};
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::FuncInfo[] = {
+		{ &Z_Construct_UFunction_ACustomFirstPersonnCharacter_spawnWeapon, "spawnWeapon" }, // 2513606000
 		{ &Z_Construct_UFunction_ACustomFirstPersonnCharacter_startJump, "startJump" }, // 3231822406
 		{ &Z_Construct_UFunction_ACustomFirstPersonnCharacter_stopJump, "stopJump" }, // 1714545956
 	};
@@ -114,6 +152,16 @@ void EmptyLinkFunctionForGeneratedCodeCustomFirstPersonnCharacter() {}
 		{ "ModuleRelativePath", "Private/CustomFirstPersonnCharacter.h" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::NewProp_Pistol_MetaData[] = {
+		{ "Category", "Guns" },
+		{ "ModuleRelativePath", "Private/CustomFirstPersonnCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::NewProp_Pistol = { "Pistol", nullptr, (EPropertyFlags)0x0014000000010001, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ACustomFirstPersonnCharacter, Pistol), Z_Construct_UClass_APistol_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::NewProp_Pistol_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::NewProp_Pistol_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::NewProp_Pistol,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ACustomFirstPersonnCharacter>::IsAbstract,
 	};
@@ -123,11 +171,11 @@ void EmptyLinkFunctionForGeneratedCodeCustomFirstPersonnCharacter() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		FuncInfo,
-		nullptr,
+		Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		UE_ARRAY_COUNT(FuncInfo),
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::PropPointers),
 		0,
 		0x008000A4u,
 		METADATA_PARAMS(Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::Class_MetaDataParams))
@@ -141,7 +189,7 @@ void EmptyLinkFunctionForGeneratedCodeCustomFirstPersonnCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACustomFirstPersonnCharacter, 4235684431);
+	IMPLEMENT_CLASS(ACustomFirstPersonnCharacter, 176553247);
 	template<> C_PL_PL_BASICPROJECT_API UClass* StaticClass<ACustomFirstPersonnCharacter>()
 	{
 		return ACustomFirstPersonnCharacter::StaticClass();

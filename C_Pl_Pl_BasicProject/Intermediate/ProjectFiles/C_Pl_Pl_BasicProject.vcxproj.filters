@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\C_Pl_Pl_BasicProject.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{E816A671-0DA9-4E1A-8423-65E569C432E7}</UniqueIdentifier>
+      <UniqueIdentifier>{9D7C37DB-D0BA-4949-ABCD-E76714D742EF}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\C_Pl_Pl_BasicProject.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{82E916C2-8641-4BAD-8FC9-8A644BC31E03}</UniqueIdentifier>
+      <UniqueIdentifier>{84A4200B-CE37-4BC7-AE7F-E5D979955365}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -30,7 +30,7 @@
       <Filter>Config</Filter>
     </None>
     <Filter Include="Source\C_Pl_Pl_BasicProject">
-      <UniqueIdentifier>{246D4E7C-D132-4875-BD4E-238B29B21FF8}</UniqueIdentifier>
+      <UniqueIdentifier>{65EE261A-8238-4FD2-923E-5FC8DD4075A7}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\C_Pl_Pl_BasicProject\C_Pl_Pl_BasicProject.Build.cs">
       <Filter>Source\C_Pl_Pl_BasicProject</Filter>
@@ -66,7 +66,7 @@
       <Filter>Source\C_Pl_Pl_BasicProject</Filter>
     </ClInclude>
     <Filter Include="Source\C_Pl_Pl_BasicProject\Private">
-      <UniqueIdentifier>{56777B25-75C6-4AC4-8E5B-5B2DDFFFAF54}</UniqueIdentifier>
+      <UniqueIdentifier>{648BBA6E-D09A-42FE-9D3A-67CA97FE7A4A}</UniqueIdentifier>
     </Filter>
     <ClCompile Include="..\..\Source\C_Pl_Pl_BasicProject\Private\AmmoCrate.cpp">
       <Filter>Source\C_Pl_Pl_BasicProject\Private</Filter>
@@ -89,10 +89,16 @@
     <ClInclude Include="..\..\Source\C_Pl_Pl_BasicProject\Private\GunParentClass.h">
       <Filter>Source\C_Pl_Pl_BasicProject\Private</Filter>
     </ClInclude>
+    <ClCompile Include="..\..\Source\C_Pl_Pl_BasicProject\Private\Pistol.cpp">
+      <Filter>Source\C_Pl_Pl_BasicProject\Private</Filter>
+    </ClCompile>
     <Filter Include="Source\C_Pl_Pl_BasicProject\Public">
-      <UniqueIdentifier>{59691ECD-906B-4BF8-B000-90CD95A81FFD}</UniqueIdentifier>
+      <UniqueIdentifier>{190C7F33-2686-44B1-9834-70BCEC827B98}</UniqueIdentifier>
     </Filter>
     <ClInclude Include="..\..\Source\C_Pl_Pl_BasicProject\Public\AmmoCrate.h">
+      <Filter>Source\C_Pl_Pl_BasicProject\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\C_Pl_Pl_BasicProject\Public\Pistol.h">
       <Filter>Source\C_Pl_Pl_BasicProject\Public</Filter>
     </ClInclude>
   </ItemGroup>

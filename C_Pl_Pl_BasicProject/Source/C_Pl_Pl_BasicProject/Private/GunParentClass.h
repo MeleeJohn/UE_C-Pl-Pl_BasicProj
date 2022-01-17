@@ -4,8 +4,9 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
-#include "GunParentClass.generated.h"
 #include "String.h"
+#include "GunParentClass.generated.h"
+
 
 UCLASS()
 class AGunParentClass : public AActor
@@ -19,16 +20,18 @@ public:
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	
 
 public:	
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
-
+	int MagCapacity = 0;
+	int SpareMagCount = 0;
 private:
 
 	FString WeaponName;
-	int MagCapacity = 0;
-	int SpareMagCount = 0;
+	
+	
 	int AmmoReserve = MagCapacity * SpareMagCount;
 
 };

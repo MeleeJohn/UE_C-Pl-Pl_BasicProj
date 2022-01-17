@@ -106,6 +106,10 @@ D:\Unreal Engine Versions\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\
 D:\Unreal Engine Versions\UE_4.27\Engine\Source\Runtime\Engine\Classes\GameFramework/RootMotionSource.h
 D:\Unreal Engine Versions\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\RootMotionSource.generated.h
 D:\Unreal Engine Versions\UE_4.27\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\Character.generated.h
+F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Source\C_Pl_Pl_BasicProject\Private\GunParentClass.h
+F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Inc\C_Pl_Pl_BasicProject\GunParentClass.generated.h
+F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Source\C_Pl_Pl_BasicProject\Public\Pistol.h
+F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Inc\C_Pl_Pl_BasicProject\Pistol.generated.h
 F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Inc\C_Pl_Pl_BasicProject\CustomFirstPersonnCharacter.generated.h
 F:\Documents\LinkedIn C++ Beginners Class Work\C++ Repo\UE_C-Pl-Pl_BasicProj\C_Pl_Pl_BasicProject\Intermediate\Build\Win64\UE4Editor\Inc\C_Pl_Pl_BasicProject\Coin.generated.h
 D:\Unreal Engine Versions\UE_4.27\Engine\Source\Runtime\Engine\Classes\Components/BoxComponent.h

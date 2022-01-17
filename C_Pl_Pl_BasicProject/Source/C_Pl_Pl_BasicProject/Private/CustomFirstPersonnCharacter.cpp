@@ -2,7 +2,7 @@
 
 
 #include "CustomFirstPersonnCharacter.h"
-
+#include "Pistol.h"
 #include "Blueprint/UserWidget.h"
 
 
@@ -28,6 +28,7 @@ void ACustomFirstPersonnCharacter::BeginPlay()
 			UE_LOG(LogTemp, Warning, TEXT("Woah is tthat a use widget I see"));
 		}
 	}*/
+	spawnWeapon();
 }
 
 // Called every frame
@@ -92,3 +93,8 @@ int ACustomFirstPersonnCharacter::getCoinScore()
 	return coinScore;
 }
 
+void ACustomFirstPersonnCharacter::spawnWeapon() {
+	Weapon = GetWorld()->SpawnActor<APistol>(Pistol, GunSpawnLocation, GunSpawnRotation);
+	Weapon->AttachToActor(this, FAttachmentTransformRules::KeepWorldTransform);
+	Weapon->SetActorLocation(GetActorLocation());
+}

@@ -5,6 +5,11 @@
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
 #include "GameFramework/Character.h"
+#include "GameFramework/Actor.h"
+#include "GunParentClass.h"
+#include "Pistol.h"
+#include "Math/Rotator.h"
+#include "Math/Vector.h"
 #include "CustomFirstPersonnCharacter.generated.h"
 
 UCLASS()
@@ -15,10 +20,20 @@ class ACustomFirstPersonnCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	ACustomFirstPersonnCharacter();
+	//UPROPERTY(EditDefaultsOnly, Category = "Spawning")
+	//TSubclassOf<USceneComponent> weaponSpawnLocation;
+
+	FVector GunSpawnLocation = GetActorLocation();
+	FRotator GunSpawnRotation = FRotator(0.0f);
+
+	UPROPERTY(EditDefaultsOnly, Category = "Guns")
+	TSubclassOf<APistol> Pistol;
 
 protected:
 	// Called when the game starts or when spawned
 	virtual void BeginPlay() override;
+	UFUNCTION()
+	void spawnWeapon();
 	/*UPROPERTY(EditAnywhere, Category = "Class Types")
 		TSubclassOf<UUserWidget> WidgetClass;
 
@@ -49,4 +64,6 @@ public:
 
 private:
 	int coinScore = 0;
+	AGunParentClass* Weapon;
+	
 };
