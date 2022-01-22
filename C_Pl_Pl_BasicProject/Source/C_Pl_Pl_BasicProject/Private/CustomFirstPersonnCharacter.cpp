@@ -4,6 +4,7 @@
 #include "CustomFirstPersonnCharacter.h"
 #include "Pistol.h"
 #include "Blueprint/UserWidget.h"
+#include "GunParentClass.h"
 
 
 // Sets default values
@@ -54,11 +55,13 @@ void ACustomFirstPersonnCharacter::SetupPlayerInputComponent(UInputComponent* Pl
 	PlayerInputComponent->BindAction("Jump", IE_Pressed, this, &ACustomFirstPersonnCharacter::startJump);
 	PlayerInputComponent->BindAction("Jump", IE_Released, this, &ACustomFirstPersonnCharacter::stopJump);
 
+	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ACustomFirstPersonnCharacter::startWeaponFire);
+	PlayerInputComponent->BindAction("Fire", IE_Released, this, &ACustomFirstPersonnCharacter::stopWeaponFire);
 }
 
 void ACustomFirstPersonnCharacter::MoveForward(float value)
 {
-	//Find "Forwards" and move that way
+	//Find "Forwards" and move that waya
 	FVector Direction = FRotationMatrix(Controller->GetControlRotation()).GetScaledAxis(EAxis::X);
 	AddMovementInput(Direction, value);
 }
@@ -95,6 +98,18 @@ int ACustomFirstPersonnCharacter::getCoinScore()
 
 void ACustomFirstPersonnCharacter::spawnWeapon() {
 	Weapon = GetWorld()->SpawnActor<APistol>(Pistol, GunSpawnLocation, GunSpawnRotation);
-	Weapon->AttachToActor(this, FAttachmentTransformRules::KeepWorldTransform);
-	Weapon->SetActorLocation(GetActorLocation());
+	APlayerCameraManager* PlayerCamera = GetWorld()->GetFirstPlayerController()->PlayerCameraManager;
+	Weapon->SetActorLocation(FVector(GetActorLocation().X+380.0f, GetActorLocation().Y+40.0f, GetActorLocation().Z-300.0f));
+	Weapon->AttachToActor(PlayerCamera, FAttachmentTransformRules::KeepWorldTransform);
+	
+}
+
+void ACustomFirstPersonnCharacter::startWeaponFire()
+{
+	Weapon->gunParentStartFire();
+}
+
+void ACustomFirstPersonnCharacter::stopWeaponFire()
+{
+	Weapon->gunParentStopFire();
 }

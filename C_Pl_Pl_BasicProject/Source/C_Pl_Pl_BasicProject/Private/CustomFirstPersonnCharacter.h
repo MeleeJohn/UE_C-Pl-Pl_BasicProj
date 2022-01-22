@@ -20,11 +20,11 @@ class ACustomFirstPersonnCharacter : public ACharacter
 public:
 	// Sets default values for this character's properties
 	ACustomFirstPersonnCharacter();
-	//UPROPERTY(EditDefaultsOnly, Category = "Spawning")
-	//TSubclassOf<USceneComponent> weaponSpawnLocation;
+	//UPROPERTY(EditDefaultsOnly, Category = "Camera")
+	//TSubclassOf<ACameraActor> playerCamera;
 
 	FVector GunSpawnLocation = GetActorLocation();
-	FRotator GunSpawnRotation = FRotator(0.0f);
+	FRotator GunSpawnRotation = FRotator(0.0f, -90.0f, 0.0f);
 
 	UPROPERTY(EditDefaultsOnly, Category = "Guns")
 	TSubclassOf<APistol> Pistol;
@@ -34,6 +34,12 @@ protected:
 	virtual void BeginPlay() override;
 	UFUNCTION()
 	void spawnWeapon();
+
+	UFUNCTION()
+	void startWeaponFire();
+
+	UFUNCTION()
+	void stopWeaponFire();
 	/*UPROPERTY(EditAnywhere, Category = "Class Types")
 		TSubclassOf<UUserWidget> WidgetClass;
 

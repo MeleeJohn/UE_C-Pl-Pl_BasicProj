@@ -34,6 +34,20 @@ void EmptyLinkFunctionForGeneratedCodeCustomFirstPersonnCharacter() {}
 		P_THIS->startJump();
 		P_NATIVE_END;
 	}
+	DEFINE_FUNCTION(ACustomFirstPersonnCharacter::execstopWeaponFire)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->stopWeaponFire();
+		P_NATIVE_END;
+	}
+	DEFINE_FUNCTION(ACustomFirstPersonnCharacter::execstartWeaponFire)
+	{
+		P_FINISH;
+		P_NATIVE_BEGIN;
+		P_THIS->startWeaponFire();
+		P_NATIVE_END;
+	}
 	DEFINE_FUNCTION(ACustomFirstPersonnCharacter::execspawnWeapon)
 	{
 		P_FINISH;
@@ -47,7 +61,9 @@ void EmptyLinkFunctionForGeneratedCodeCustomFirstPersonnCharacter() {}
 		static const FNameNativePtrPair Funcs[] = {
 			{ "spawnWeapon", &ACustomFirstPersonnCharacter::execspawnWeapon },
 			{ "startJump", &ACustomFirstPersonnCharacter::execstartJump },
+			{ "startWeaponFire", &ACustomFirstPersonnCharacter::execstartWeaponFire },
 			{ "stopJump", &ACustomFirstPersonnCharacter::execstopJump },
+			{ "stopWeaponFire", &ACustomFirstPersonnCharacter::execstopWeaponFire },
 		};
 		FNativeFunctionRegistrar::RegisterFunctions(Class, Funcs, UE_ARRAY_COUNT(Funcs));
 	}
@@ -95,6 +111,28 @@ void EmptyLinkFunctionForGeneratedCodeCustomFirstPersonnCharacter() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_ACustomFirstPersonnCharacter_startWeaponFire_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACustomFirstPersonnCharacter_startWeaponFire_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Private/CustomFirstPersonnCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACustomFirstPersonnCharacter_startWeaponFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACustomFirstPersonnCharacter, nullptr, "startWeaponFire", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACustomFirstPersonnCharacter_startWeaponFire_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACustomFirstPersonnCharacter_startWeaponFire_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACustomFirstPersonnCharacter_startWeaponFire()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACustomFirstPersonnCharacter_startWeaponFire_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	struct Z_Construct_UFunction_ACustomFirstPersonnCharacter_stopJump_Statics
 	{
 #if WITH_METADATA
@@ -114,6 +152,28 @@ void EmptyLinkFunctionForGeneratedCodeCustomFirstPersonnCharacter() {}
 		if (!ReturnFunction)
 		{
 			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACustomFirstPersonnCharacter_stopJump_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
+	struct Z_Construct_UFunction_ACustomFirstPersonnCharacter_stopWeaponFire_Statics
+	{
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UE4CodeGen_Private::FFunctionParams FuncParams;
+	};
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_ACustomFirstPersonnCharacter_stopWeaponFire_Statics::Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Private/CustomFirstPersonnCharacter.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FFunctionParams Z_Construct_UFunction_ACustomFirstPersonnCharacter_stopWeaponFire_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_ACustomFirstPersonnCharacter, nullptr, "stopWeaponFire", nullptr, nullptr, 0, nullptr, 0, RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00080401, 0, 0, METADATA_PARAMS(Z_Construct_UFunction_ACustomFirstPersonnCharacter_stopWeaponFire_Statics::Function_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UFunction_ACustomFirstPersonnCharacter_stopWeaponFire_Statics::Function_MetaDataParams)) };
+	UFunction* Z_Construct_UFunction_ACustomFirstPersonnCharacter_stopWeaponFire()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UE4CodeGen_Private::ConstructUFunction(ReturnFunction, Z_Construct_UFunction_ACustomFirstPersonnCharacter_stopWeaponFire_Statics::FuncParams);
 		}
 		return ReturnFunction;
 	}
@@ -143,7 +203,9 @@ void EmptyLinkFunctionForGeneratedCodeCustomFirstPersonnCharacter() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_ACustomFirstPersonnCharacter_spawnWeapon, "spawnWeapon" }, // 2513606000
 		{ &Z_Construct_UFunction_ACustomFirstPersonnCharacter_startJump, "startJump" }, // 3231822406
+		{ &Z_Construct_UFunction_ACustomFirstPersonnCharacter_startWeaponFire, "startWeaponFire" }, // 1616218465
 		{ &Z_Construct_UFunction_ACustomFirstPersonnCharacter_stopJump, "stopJump" }, // 1714545956
+		{ &Z_Construct_UFunction_ACustomFirstPersonnCharacter_stopWeaponFire, "stopWeaponFire" }, // 745319277
 	};
 #if WITH_METADATA
 	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ACustomFirstPersonnCharacter_Statics::Class_MetaDataParams[] = {
@@ -189,7 +251,7 @@ void EmptyLinkFunctionForGeneratedCodeCustomFirstPersonnCharacter() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ACustomFirstPersonnCharacter, 176553247);
+	IMPLEMENT_CLASS(ACustomFirstPersonnCharacter, 1542761571);
 	template<> C_PL_PL_BASICPROJECT_API UClass* StaticClass<ACustomFirstPersonnCharacter>()
 	{
 		return ACustomFirstPersonnCharacter::StaticClass();

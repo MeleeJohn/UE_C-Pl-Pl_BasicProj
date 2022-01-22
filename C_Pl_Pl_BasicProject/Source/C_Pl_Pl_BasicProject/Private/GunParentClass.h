@@ -5,6 +5,7 @@
 #include "CoreMinimal.h"
 #include "GameFramework/Actor.h"
 #include "String.h"
+
 #include "GunParentClass.generated.h"
 
 
@@ -16,6 +17,8 @@ class AGunParentClass : public AActor
 public:	
 	// Sets default values for this actor's properties
 	AGunParentClass();
+	void gunParentStartFire();
+	void gunParentStopFire();
 
 protected:
 	// Called when the game starts or when spawned
@@ -27,6 +30,9 @@ public:
 	virtual void Tick(float DeltaTime) override;
 	int MagCapacity = 0;
 	int SpareMagCount = 0;
+	bool isAuto;
+	int damage;
+
 private:
 
 	FString WeaponName;

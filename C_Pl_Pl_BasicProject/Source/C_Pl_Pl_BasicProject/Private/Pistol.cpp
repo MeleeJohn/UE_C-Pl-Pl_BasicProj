@@ -12,7 +12,10 @@ void APistol::SetUpWeaponInfo()
 {
 	MagCapacity = pistolMagSize;
 	SpareMagCount = pistolSpareMags;
-
+	isAuto = false;
+	damage = 10;
 }
+
+
 
 

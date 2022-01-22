@@ -18,6 +18,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
  \
 	DECLARE_FUNCTION(execstopJump); \
 	DECLARE_FUNCTION(execstartJump); \
+	DECLARE_FUNCTION(execstopWeaponFire); \
+	DECLARE_FUNCTION(execstartWeaponFire); \
 	DECLARE_FUNCTION(execspawnWeapon);
 
 
@@ -25,6 +27,8 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
  \
 	DECLARE_FUNCTION(execstopJump); \
 	DECLARE_FUNCTION(execstartJump); \
+	DECLARE_FUNCTION(execstopWeaponFire); \
+	DECLARE_FUNCTION(execstartWeaponFire); \
 	DECLARE_FUNCTION(execspawnWeapon);
 
 
