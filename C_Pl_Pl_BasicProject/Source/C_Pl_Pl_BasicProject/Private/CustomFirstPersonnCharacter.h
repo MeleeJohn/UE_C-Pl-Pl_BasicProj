@@ -40,6 +40,9 @@ protected:
 
 	UFUNCTION()
 	void stopWeaponFire();
+
+	UFUNCTION()
+	void reloadWepaon();
 	/*UPROPERTY(EditAnywhere, Category = "Class Types")
 		TSubclassOf<UUserWidget> WidgetClass;
 

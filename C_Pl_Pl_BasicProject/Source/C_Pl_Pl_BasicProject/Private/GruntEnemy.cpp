@@ -7,7 +7,6 @@
 void AGruntEnemy::BeginPlay() {
 	Super::BeginPlay();
 	SetUpEnemyStats();
-	UE_LOG(LogTemp, Warning, TEXT("Killing myself"));
 
 }
 
@@ -22,11 +21,9 @@ void AGruntEnemy::Tick(float DeltaTime)
 
 void AGruntEnemy::kill()
 {
-
 	isDead = true;
 	UE_LOG(LogTemp, Warning, TEXT("Killing myself"));
 	Destroy();
-
 }
 
 void AGruntEnemy::SetUpEnemyStats()

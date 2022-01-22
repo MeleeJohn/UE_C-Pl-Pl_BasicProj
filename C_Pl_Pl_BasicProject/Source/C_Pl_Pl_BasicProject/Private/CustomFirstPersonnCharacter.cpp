@@ -57,6 +57,8 @@ void ACustomFirstPersonnCharacter::SetupPlayerInputComponent(UInputComponent* Pl
 
 	PlayerInputComponent->BindAction("Fire", IE_Pressed, this, &ACustomFirstPersonnCharacter::startWeaponFire);
 	PlayerInputComponent->BindAction("Fire", IE_Released, this, &ACustomFirstPersonnCharacter::stopWeaponFire);
+
+	PlayerInputComponent->BindAction("Reload", IE_Pressed, this, &ACustomFirstPersonnCharacter::reloadWepaon);
 }
 
 void ACustomFirstPersonnCharacter::MoveForward(float value)
@@ -106,10 +108,25 @@ void ACustomFirstPersonnCharacter::spawnWeapon() {
 
 void ACustomFirstPersonnCharacter::startWeaponFire()
 {
-	Weapon->gunParentStartFire();
+	if (Weapon->CurrentAmmo > 0) {
+		Weapon->gunParentStartFire();
+	}
+	else {
+		UE_LOG(LogTemp, Warning, TEXT("*click click click*"));
+	}
 }
 
 void ACustomFirstPersonnCharacter::stopWeaponFire()
 {
 	Weapon->gunParentStopFire();
+}
+
+void ACustomFirstPersonnCharacter::reloadWepaon()
+{
+	if (Weapon->SpareMagCount > 0) {
+		Weapon->CurrentAmmo = Weapon->MagCapacity;
+		Weapon->SpareMagCount--;
+	} else {
+		UE_LOG(LogTemp, Warning, TEXT("Out of Spare mags, ammo depleted"));
+	}
 }

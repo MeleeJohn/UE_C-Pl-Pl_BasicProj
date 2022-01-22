@@ -29,6 +29,7 @@ public:
 	// Called every frame
 	virtual void Tick(float DeltaTime) override;
 	int MagCapacity = 0;
+	int CurrentAmmo = MagCapacity;
 	int SpareMagCount = 0;
 	bool isAuto;
 	int damage;

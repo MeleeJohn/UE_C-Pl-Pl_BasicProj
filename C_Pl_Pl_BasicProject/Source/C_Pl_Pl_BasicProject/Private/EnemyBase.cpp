@@ -21,9 +21,7 @@ void AEnemyBase::BeginPlay()
 {
 
 	Super::BeginPlay();
-	/*auto level = GetWorld()->GetLevel(0);
-	this->PrimaryActorTick.Target = this;
-	this->PrimaryActorTick.RegisterTickFunction(level);*/
+
 }
 
 
@@ -32,9 +30,7 @@ void AEnemyBase::BeginPlay()
 void AEnemyBase::Tick(float DeltaTime)
 {
 	Super::Tick(DeltaTime);
-	/*if (health <= 0 && isDead == false) {
-		dead();
-	}*/
+
 	
 }
 
@@ -45,10 +41,5 @@ void AEnemyBase::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent
 
 }
 
-void AEnemyBase::dead()
-{
-	isDead = true;
-	UE_LOG(LogTemp, Warning, TEXT("Killing myself"));
-	Destroy();
-}
+
 

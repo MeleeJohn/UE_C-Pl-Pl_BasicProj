@@ -17,8 +17,8 @@ class C_PL_PL_BASICPROJECT_API APistol : public AGunParentClass
 	public:
 
 	private:
-		int pistolMagSize;
-		int pistolSpareMags;
+		int pistolMagSize = 12;
+		int pistolSpareMags = 2;
 
 		void SetUpWeaponInfo();
 

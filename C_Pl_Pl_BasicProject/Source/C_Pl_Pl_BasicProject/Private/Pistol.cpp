@@ -11,6 +11,7 @@ void APistol::BeginPlay()
 void APistol::SetUpWeaponInfo()
 {
 	MagCapacity = pistolMagSize;
+	CurrentAmmo = MagCapacity;
 	SpareMagCount = pistolSpareMags;
 	isAuto = false;
 	damage = 10;

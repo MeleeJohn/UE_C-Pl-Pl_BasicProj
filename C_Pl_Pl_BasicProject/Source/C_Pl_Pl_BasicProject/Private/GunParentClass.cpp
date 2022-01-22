@@ -31,9 +31,9 @@ void AGunParentClass::Tick(float DeltaTime)
 
 void AGunParentClass::gunParentStartFire()	
 {
-	
+	CurrentAmmo--;
 	FVector traceStartLoc = GetActorLocation();
-	FVector traceEndLoc = traceStartLoc + (GetActorRightVector() * 300);
+	FVector traceEndLoc = traceStartLoc + (GetActorRightVector() * 600);
 	FHitResult traceHitResult;
 
 	FCollisionQueryParams traceParams;
@@ -42,11 +42,11 @@ void AGunParentClass::gunParentStartFire()
 		UE_LOG(LogTemp, Warning, TEXT("gun is on auto fire"));
 	}
 	else {
-		UE_LOG(LogTemp, Warning, TEXT("gun is on single fire"));
+		//UE_LOG(LogTemp, Warning, TEXT("gun is on single fire"));
 		GetWorld()->LineTraceSingleByChannel(traceHitResult, traceStartLoc, traceEndLoc, ECC_Visibility, traceParams);
 		if (traceHitResult.GetActor() != nullptr ) {
 			if (traceHitResult.Actor.Get()->ActorHasTag("Enemy")) {
-				UE_LOG(LogTemp, Warning, TEXT("Woah I just hit an enemy"));
+				//UE_LOG(LogTemp, Warning, TEXT("Woah I just hit an enemy"));
 				AEnemyBase* hitEnemy = Cast<AEnemyBase, AActor>(traceHitResult.Actor);
 				hitEnemy->Hit(damage);
 				UE_LOG(LogTemp, Warning, TEXT("Enemy health %i"), hitEnemy->health);
@@ -54,7 +54,7 @@ void AGunParentClass::gunParentStartFire()
 		}
 		DrawDebugLine(GetWorld(), traceStartLoc, traceEndLoc, FColor::Orange, false, 2.0f);
 
-		UE_LOG(LogTemp, Warning, TEXT("Distance to end is %f"), traceHitResult.Distance);
+		//UE_LOG(LogTemp, Warning, TEXT("Distance to end is %f"), traceHitResult.Distance);
 	}
 	
 }
